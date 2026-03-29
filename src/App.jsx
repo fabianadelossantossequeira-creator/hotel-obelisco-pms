@@ -195,6 +195,7 @@ function PMS({ reservations, hk, setHk, addReservation, updateReservation, isAva
             </button>
           ))}
         </nav>
+        <button onClick={()=>{if(window.confirm("¿Resetear todas las reservas?")){{setReservations(INITIAL_RES);setHk(HK_INIT);}}}} style={{margin:"20px 10px",padding:"8px",background:"#e53e3e",color:"white",border:"none",borderRadius:"6px",cursor:"pointer",width:"calc(100% - 20px)",fontSize:"12px"}}>🔄 Resetear Sistema</button>
 
         <div style={{padding:"14px 10px",borderTop:"1px solid #141824"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
